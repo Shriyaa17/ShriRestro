@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Boxicons for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+   
+    <!-- Navbar Section -->
+    <header>
+        <div class="navbar">
+            <h1>Shri's Restro</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/dish1.jpg" alt="Dish 1">
+                <h3>Dish 1</h3>
+                <p>The Most Famous Dish of our Restro.</p>
+                <p class="price">Rs.150/-</p>
+            </div>
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/dish2.jpg" alt="Dish 2">
+                <h3>Dish 2</h3>
+                <p>A delicious dish of our Restro.</p>
+                <p class="price">Rs.175/-</p>
+            </div>
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/dish3.jpg" alt="Dish 3">
+                <h3>Dish 3</h3>
+                <p>The Most Famous Dish of our Restro.</p>
+                <p class="price">Rs.200/-</p>
+            </div>
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/dish4.jpg" alt="Dish 4">
+                <h3>Dish 4</h3>
+                <p>The Most Famous Dish of our Restro.</p>
+                <p class="price">Rs.225/-</p>
+            </div>
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/dish5.jpg" alt="Dish 5">
+                <h3>Dish 5</h3>
+                <p>The Most Famous Dish of our Restro.</p>
+                <p class="price">Rs.250/-</p>
+            </div>
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/dish6.jpg" alt="Dish 6">
+                <h3>Dish 6</h3>
+                <p>The Most Famous Dish of our Restro.</p>
+                <p class="price">Rs.275/-</p>
+            </div>
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/dish7.jpg" alt="Dish 7">
+                <h3>Dish 7</h3>
+                <p>The Most Famous Dish of our Restro.</p>
+                <p class="price">Rs.300/-</p>
+            </div>
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/dish8.jpg" alt="Dish 8">
+                <h3>Dish 8</h3>
+                <p>The Most Famous Dish of our Restro.</p>
+                <p class="price">Rs.350/-</p>
+            </div>
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/Dish 9.jpg" alt="Dish 8">
+                <h3>Dish 9</h3>
+                <p>The Most Famous Dish of our Restro.</p>
+                <p class="price">Rs.250/-</p>
+            </div>
+            <div class="menu-item" onclick="openModal()">
+                <img src="images/dish10.jpg" alt="Dish 8">
+                <h3>Dish 10</h3>
+                <p>The Most Famous Dish of our Restro.</p>
+                <p class="price">Rs.170/-</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Select Your Dishes</h2>
+            <form id="orderForm">
+                <div>
+                    <label for="dish1-quantity">Dish 1 (Rs.150/-):</label>
+                    <input type="number" id="dish1-quantity" name="dish1" min="0" value="0">
+                </div>
+                <div>
+                    <label for="dish2-quantity">Dish 2 (Rs.175/-):</label>
+                    <input type="number" id="dish2-quantity" name="dish2" min="0" value="0">
+                </div>
+                <div>
+                    <label for="dish3-quantity">Dish 3 (Rs.200/-):</label>
+                    <input type="number" id="dish3-quantity" name="dish3" min="0" value="0">
+                </div>
+                <div>
+                    <label for="dish4-quantity">Dish 4 (Rs.225/-):</label>
+                    <input type="number" id="dish4-quantity" name="dish4" min="0" value="0">
+                </div>
+                <div>
+                    <label for="dish5-quantity">Dish 5 (Rs.250/-):</label>
+                    <input type="number" id="dish5-quantity" name="dish5" min="0" value="0">
+                </div>
+                <div>
+                    <label for="dish6-quantity">Dish 6 (Rs.275/-):</label>
+                    <input type="number" id="dish6-quantity" name="dish6" min="0" value="0">
+                </div>
+                <div>
+                    <label for="dish7-quantity">Dish 7 (Rs.300/-):</label>
+                    <input type="number" id="dish7-quantity" name="dish7" min="0" value="0">
+                </div>
+                <div>
+                    <label for="dish8-quantity">Dish 8 (Rs.350/-):</label>
+                    <input type="number" id="dish8-quantity" name="dish8" min="0" value="0">
+                </div>
+                <div>
+                    <label for="dish9-quantity">Dish 9 (Rs.250/-):</label>
+                    <input type="number" id="dish9-quantity" name="dish9" min="0" value="0">
+                </div>
+                <div>
+                    <label for="dish10-quantity">Dish 10 (Rs.170/-):</label>
+                    <input type="number" id="dish10-quantity" name="dish10" min="0" value="0">
+                </div>
+                <button type="button" onclick="placeOrder()">Order Now</button>
+            </form>
+            <div id="orderMessage" style="display:none; margin-top: 20px; color: rgb(164, 26, 26); text-align:center; font-size:20px;">
+              Your order will get back to you soon!</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" style="background-color: coral;">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-row" style="margin-left: 7%;">
+                    <div class="footer-info">
+                        <h3>Shri's Restro</h3>
+                        <p>
+                            Surbhi Computer Typing Institute,<br>
+                            Nandori Road, Hinganghat,<br>
+                            Maharashtra, India 442301<br><br>
+                            <strong>Phone:</strong> +91 123458965<br>
+                            <strong>Email:</strong> restaurant@example.com<br>
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links" style="margin-right:10%;">
+                        <h4>USEFUL LINKS</h4>
+                        <style>
+                            a{
+                              text-decoration: none;
+                              color: white;
+                            }
+                          </style>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="location.html">Our Location</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services" style="margin-right: 7%;">
+                        <h4>OUR SERVICES</h4>
+                        <ul>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Takeaway</a></li>
+                            <li><a href="#">Dine-in</a></li>
+                            <li><a href="#">Catering</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Function to open the modal
+        function openModal() {
+            modal.style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Function to place order
+        function placeOrder() {
+            const orderForm = document.getElementById('orderForm');
+            let orderDetails = '';
+            let totalCost = 0;
+
+            for (let i = 1; i <= 8; i++) {
+                const quantity = document.getElementById(`dish${i}-quantity`).value;
+                if (quantity > 0) {
+                    const price = 150 + (i - 1); // Assuming prices increase by Rs.25 for each dish
+                    orderDetails += `Dish ${i}: ${quantity} x Rs.${price} = Rs.${quantity * price}\n`;
+                    totalCost += quantity * price;
+                }
+            }
+
+            if (orderDetails) {
+                alert(`Order Summary:\n${orderDetails}Total Cost: Rs.${totalCost}`);
+
+                // Show success message
+                document.getElementById('orderMessage').style.display = 'block';
+                setTimeout(closeModal, 2000); 
+            } else {
+                alert('Please select at least one dish.');
+            }
+        }
+
+        // Close the modal when clicking anywhere outside of it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

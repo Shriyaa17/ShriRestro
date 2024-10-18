@@ -1,0 +1,488 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('../images/restaurant-hero.png') center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: #f04e23;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #d03e1a;
+}
+
+
+.explore-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF6347;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #FF4500;
+}
+
+/* Footer Styles */
+/* footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+} */
+
+#footer {
+    background: #eeeeee;
+    padding: 0 0 30px 0;
+    color: #555555;
+    font-size: 14px;
+  }
+
+
+  #footer .footer-top {
+    background: #f6f6f6;
+    padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #1977cc;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+
+  
+#footer .footer-top .social-links a:hover {
+    background: #65c9cd;
+    text-decoration: none;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #3fbbc0;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #555555;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    color: #3fbbc0;
+  }
+  
+  #footer .footer-top .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 110px);
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #1977cc;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+    background: #65c9cd;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  
+/* Menu Section Styles */
+.menu {
+    padding: 10px;
+    background: url('../images/restaurant-hero.png') center center/cover no-repeat;
+    
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+
+}
+
+.menu h2 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    color: #f4390f;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #e95e5e;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit:fill;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #000000;
+    margin: 10px 0;
+}
+
+
+/* About Section Styles */
+
+.about {
+    padding: 10px;
+    background: url('../images/aboutus.jpg') center center/cover no-repeat;
+    
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.about-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 800px;
+}
+
+.about-text p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-style: italic;
+    
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+    }
+    .about-content img {
+        width: 50%;
+        margin-right: 30px;
+    }
+    .about-text {
+        width: 50%;
+    }
+}
+
+
+/* Location Section Styles */
+.location {
+    padding: 10px;
+    background: url('../images/aboutus.jpg') center center/cover no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.location h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.location p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.map-container,
+.retro-image-container {
+    width: 100%;
+    max-width: 500px;
+    height: 300px; /* Ensure both map and image have the same height */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%; /* Match the height of the container */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.retro-image-container img {
+    width: 100%;
+    height: 100%; /* Ensure image fills the container */
+    object-fit: cover; /* Keep aspect ratio and fill the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .location-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+
+/* Contact Page Styles */
+.contact {
+    padding: 10px;
+    background: url('../images/contactus.jpg') center center/cover no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #090808;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #FF4500;
+}
+
+#form-response {
+    font-size: 1.2rem;
+    color: green;
+    margin-top: 20px;
+}
